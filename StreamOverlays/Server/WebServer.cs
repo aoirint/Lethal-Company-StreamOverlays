@@ -343,7 +343,7 @@ internal static class WebServer
             moonName = Utils.GetCurrentPlanetName(),
             weatherName = Utils.GetEnumName(Utils.GetCurrentPlanetWeather()),
             showWeatherIcon = Plugin.ConfigManager.MoonStat_ShowWeatherIcon.Value,
-            dayCount = DayManager.GetDayNumber(),
+            dayCount = Utils.GetDaysSpent(),
             dayInQuota = Utils.GetDayInQuota(),
             quotaValue = Utils.GetProfitQuota(),
             quotaIndex = Utils.GetQuotaIndex(),
