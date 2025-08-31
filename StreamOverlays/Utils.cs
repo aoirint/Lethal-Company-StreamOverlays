@@ -136,7 +136,7 @@ internal static class Utils
     {
         if (StartOfRound.Instance == null || StartOfRound.Instance.gameStats == null)
         {
-            return 1;
+            return 0;
         }
 
         return StartOfRound.Instance.gameStats.daysSpent;
