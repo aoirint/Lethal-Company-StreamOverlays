@@ -19,6 +19,7 @@ internal class ConfigManager
 
     // Day Stat
     public ConfigEntry<string> DayStat_Label { get; private set; }
+    public ConfigEntry<bool> DayStat_UseGameStat { get; private set; }
 
     // Quota Stat
     public ConfigEntry<string> QuotaStat_Label { get; private set; }
@@ -61,6 +62,10 @@ internal class ConfigManager
         // Day Stat
         DayStat_Label = ConfigHelper.Bind("Day Stat", "Label", defaultValue: "Day: {value} ({value2}/{value3})", requiresRestart: false, "The formatting of the Day stat display text. {value} is the day number. {value2} is the day number in the current quota. {value3} is the amount of days in a quota. You can remove {value2} and {value3} if you want to.");
         DayStat_Label.SettingChanged += (object sender, EventArgs e) => WebServer.UpdateOverlaysFormatting();
+
+        // Day Stat
+        DayStat_UseGameStat = ConfigHelper.Bind("Day Stat", "UseGameStat", defaultValue: true, requiresRestart: false, "If enabled, will use the in-game stat day number. If disabled, will use the day number for the average per day calculation.");
+        DayStat_UseGameStat.SettingChanged += (object sender, EventArgs e) => WebServer.UpdateOverlaysFormatting();
 
         // Quota Stat
         QuotaStat_Label = ConfigHelper.Bind("Quota Stat", "Label", defaultValue: "Quota {value2}: ${value}", requiresRestart: false, "The formatting of the Quota stat display text. {value} is the current profit quota. {value2} is the quota number/index. You can remove {value2} if you want to.");

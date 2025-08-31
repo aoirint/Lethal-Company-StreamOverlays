@@ -132,7 +132,7 @@ internal static class Utils
         return StartOfRound.Instance.currentLevel.currentWeather;
     }
 
-    public static int GetDaysSpent()
+    public static int GetGameStatDayNumber()
     {
         if (StartOfRound.Instance == null || StartOfRound.Instance.gameStats == null)
         {
