@@ -64,7 +64,7 @@ internal class ConfigManager
         DayStat_Label.SettingChanged += (object sender, EventArgs e) => WebServer.UpdateOverlaysFormatting();
 
         // Day Stat
-        DayStat_UseGameStat = ConfigHelper.Bind("Day Stat", "UseGameStat", defaultValue: true, requiresRestart: false, "If enabled, will use the in-game stat day number. If disabled, will use the day number for the average per day calculation.");
+        DayStat_UseGameStat = ConfigHelper.Bind("Day Stat", "UseGameStat", defaultValue: true, requiresRestart: false, "If enabled, will use the in-game stat day for the day number instead of the mod's own day counter.");
         DayStat_UseGameStat.SettingChanged += (object sender, EventArgs e) => WebServer.UpdateOverlaysFormatting();
 
         // Quota Stat
