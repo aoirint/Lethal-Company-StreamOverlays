@@ -10,7 +10,13 @@ internal static class GameNetworkManagerPatch
     [HarmonyPostfix]
     private static void SaveGamePatch()
     {
-        DayManager.SaveDayData();
+        // True if disconnected before saving (save/load retry)
+        bool isDisconnectionSave = StartOfRound.Instance == null || !StartOfRound.Instance.inShipPhase;
+        if (! isDisconnectionSave)
+        {
+            DayManager.SaveDayData();
+        }
+
         LootManager.UpdateLootTotal();
         WebServer.UpdateOverlaysData();
     }
