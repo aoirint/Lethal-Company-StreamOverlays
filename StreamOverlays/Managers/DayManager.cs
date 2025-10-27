@@ -8,12 +8,13 @@ namespace com.github.zehsteam.StreamOverlays.Managers;
 
 internal static class DayManager
 {
+    public static IReadOnlyList<DayData> DayDataList => _dayDataList;
 
-    public static List<DayData> DayDataList = [];
+    private static List<DayData> _dayDataList = [];
 
     public static void LoadDayData()
     {
-        DayDataList = [];
+        _dayDataList = [];
 
         if (!NetworkUtils.IsServer)
         {
@@ -28,7 +29,7 @@ internal static class DayManager
         try
         {
             string json = GameSaveFileHelper.Load<string>("DayData");
-            DayDataList = JsonConvert.DeserializeObject<List<DayData>>(json);
+            _dayDataList = JsonConvert.DeserializeObject<List<DayData>>(json);
 
             Logger.LogInfo($"Loaded day data from save file. {json}", extended: true);
         }
@@ -45,9 +46,14 @@ internal static class DayManager
             return;
         }
 
+        if (StartOfRound.Instance == null || !StartOfRound.Instance.inShipPhase)
+        {
+            return;
+        }
+
         try
         {
-            string json = JsonConvert.SerializeObject(DayDataList);
+            string json = JsonConvert.SerializeObject(_dayDataList);
             GameSaveFileHelper.Save("DayData", json);
 
             Logger.LogInfo($"Saved day data to save file. {json}", extended: true);
@@ -56,6 +62,11 @@ internal static class DayManager
         {
             Logger.LogError($"Failed to save day data to save file. {ex}");
         }
+    }
+
+    public static void SetDayData(List<DayData> dayDataList)
+    {
+        _dayDataList = dayDataList;
     }
 
     public static void AddDayData(int scrapCollected)
@@ -67,12 +78,12 @@ internal static class DayManager
 
         int dayNumber = GetDayNumber();
 
-        if (DayDataList.Any(x => x.Day == dayNumber))
+        if (_dayDataList.Any(x => x.Day == dayNumber))
         {
             return;
         }
 
-        DayDataList.Add(new DayData(dayNumber, scrapCollected));
+        _dayDataList.Add(new DayData(dayNumber, scrapCollected));
     }
 
     private static bool CanAddDayData()
@@ -87,23 +98,28 @@ internal static class DayManager
 
     public static void ResetSavedDayData()
     {
-        DayDataList = [];
+        ResetDayData();
         SaveDayData();
+    }
+
+    public static void ResetDayData()
+    {
+        _dayDataList = [];
     }
 
     public static int GetDayNumber()
     {
-        return DayDataList.Count + 1;
+        return _dayDataList.Count + 1;
     }
 
     public static int GetAveragePerDay()
     {
-        if (DayDataList.Count == 0)
+        if (_dayDataList.Count == 0)
         {
             return 0;
         }
 
-        return DayDataList.Sum(x => x.ScrapCollected) / DayDataList.Count;
+        return _dayDataList.Sum(x => x.ScrapCollected) / _dayDataList.Count;
     }
 }
 

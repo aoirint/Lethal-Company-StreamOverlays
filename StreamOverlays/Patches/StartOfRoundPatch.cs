@@ -96,6 +96,7 @@ internal static class StartOfRoundPatch
     [HarmonyPostfix]
     private static void OnLocalDisconnectPatch()
     {
+        DayManager.ResetDayData();
         WebServer.UpdateOverlaysData();
     }
 }

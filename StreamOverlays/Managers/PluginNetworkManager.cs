@@ -138,7 +138,7 @@ internal static class PluginNetworkManager
         {
             StartOfRound.Instance.gameStats.daysSpent = customMessage.DaysSpent;
             TimeOfDay.Instance.timesFulfilledQuota = customMessage.TimesFulfilledQuota;
-            DayManager.DayDataList = customMessage.DayDataList.ToList();
+            DayManager.SetDayData(customMessage.DayDataList.ToList());
 
             Logger.LogInfo("Applied CustomMessage data successfully!");
         }

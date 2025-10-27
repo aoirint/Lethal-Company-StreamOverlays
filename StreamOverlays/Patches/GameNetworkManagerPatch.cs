@@ -22,5 +22,7 @@ internal static class GameNetworkManagerPatch
     {
         DayManager.ResetSavedDayData();
         WebServer.UpdateOverlaysData();
+
+        Logger.LogInfo("Reset saved data.", extended: true);
     }
 }
