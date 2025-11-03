@@ -1,4 +1,14 @@
-# StreamOverlays
+# StreamOverlaysRetryPatched
+
+**This fork is no longer maintained as of 2025-11-03 UTC, since the issue was fixed in the original mod [Zehs-StreamOverlays](https://github.com/ZehsTeam/Lethal-Company-StreamOverlays) v1.4.5 (2025-10-27 UTC). Thanks to the original mod author, [@ZehsTeam](https://github.com/ZehsTeam)!**
+
+The original mod can be found at the following links:
+
+- Thunderstore: https://thunderstore.io/c/lethal-company/p/Zehs/StreamOverlays/
+- GitHub: https://github.com/ZehsTeam/Lethal-Company-StreamOverlays
+
+---
+
 #### Display real-time game stats on your stream using browser sources. Shows the player count, current moon, weather, day count, quota, ship loot, and average per day. Works with OBS, Streamlabs OBS, and similar software for Twitch, YouTube, TikTok, Kick, and more.
 
 #### <ins>This mod is fully client-side and works in vanilla lobbies.</ins>
