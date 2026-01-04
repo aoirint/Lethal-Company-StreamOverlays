@@ -1,10 +1,10 @@
 ﻿using BepInEx.Configuration;
-using com.github.zehsteam.StreamOverlays.Dependencies;
-using com.github.zehsteam.StreamOverlays.Extensions;
-using com.github.zehsteam.StreamOverlays.Managers;
+using com.aoirint.StreamOverlaysHqolPatched.Dependencies;
+using com.aoirint.StreamOverlaysHqolPatched.Extensions;
+using com.aoirint.StreamOverlaysHqolPatched.Managers;
 using System;
 
-namespace com.github.zehsteam.StreamOverlays.Helpers;
+namespace com.aoirint.StreamOverlaysHqolPatched.Helpers;
 
 internal static class ConfigHelper
 {

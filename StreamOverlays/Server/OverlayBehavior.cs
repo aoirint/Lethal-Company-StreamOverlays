@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using WebSocketSharp.Server;
 
-namespace com.github.zehsteam.StreamOverlays.Server;
+namespace com.aoirint.StreamOverlaysHqolPatched.Server;
 
 public class OverlayBehavior : WebSocketBehavior
 {

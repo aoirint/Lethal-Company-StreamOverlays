@@ -1,16 +1,16 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
-using com.github.zehsteam.StreamOverlays.Dependencies;
-using com.github.zehsteam.StreamOverlays.Dependencies.ShipInventoryProxy;
-using com.github.zehsteam.StreamOverlays.Dependencies.Vanilla;
-using com.github.zehsteam.StreamOverlays.Helpers;
-using com.github.zehsteam.StreamOverlays.Managers;
-using com.github.zehsteam.StreamOverlays.Patches;
-using com.github.zehsteam.StreamOverlays.Server;
+using com.aoirint.StreamOverlaysHqolPatched.Dependencies;
+using com.aoirint.StreamOverlaysHqolPatched.Dependencies.ShipInventoryProxy;
+using com.aoirint.StreamOverlaysHqolPatched.Dependencies.Vanilla;
+using com.aoirint.StreamOverlaysHqolPatched.Helpers;
+using com.aoirint.StreamOverlaysHqolPatched.Managers;
+using com.aoirint.StreamOverlaysHqolPatched.Patches;
+using com.aoirint.StreamOverlaysHqolPatched.Server;
 using HarmonyLib;
 using System.Threading.Tasks;
 
-namespace com.github.zehsteam.StreamOverlays;
+namespace com.aoirint.StreamOverlaysHqolPatched;
 
 [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
 [BepInDependency(LethalConfigProxy.PLUGIN_GUID, BepInDependency.DependencyFlags.SoftDependency)]
@@ -30,8 +30,8 @@ internal class Plugin : BaseUnityPlugin
     {
         Instance = this;
 
-        StreamOverlays.Logger.Initialize(BepInEx.Logging.Logger.CreateLogSource(MyPluginInfo.PLUGIN_GUID));
-        StreamOverlays.Logger.LogInfo($"{MyPluginInfo.PLUGIN_NAME} has awoken!");
+        StreamOverlaysHqolPatched.Logger.Initialize(BepInEx.Logging.Logger.CreateLogSource(MyPluginInfo.PLUGIN_GUID));
+        StreamOverlaysHqolPatched.Logger.LogInfo($"{MyPluginInfo.PLUGIN_NAME} has awoken!");
 
         Config = Utils.CreateGlobalConfigFile();
 

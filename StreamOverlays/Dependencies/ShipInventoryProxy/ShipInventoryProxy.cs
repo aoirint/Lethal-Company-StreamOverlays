@@ -1,11 +1,11 @@
 ﻿using BepInEx.Bootstrap;
-using com.github.zehsteam.StreamOverlays.Dependencies.ShipInventoryProxy.Patches;
+using com.aoirint.StreamOverlaysHqolPatched.Dependencies.ShipInventoryProxy.Patches;
 using HarmonyLib;
 using ShipInventory.Items;
 using System;
 using System.Runtime.CompilerServices;
 
-namespace com.github.zehsteam.StreamOverlays.Dependencies.ShipInventoryProxy;
+namespace com.aoirint.StreamOverlaysHqolPatched.Dependencies.ShipInventoryProxy;
 
 internal static class ShipInventoryProxy
 {

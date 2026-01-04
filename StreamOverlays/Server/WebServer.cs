@@ -1,5 +1,5 @@
-﻿using com.github.zehsteam.StreamOverlays.Helpers;
-using com.github.zehsteam.StreamOverlays.Managers;
+﻿using com.aoirint.StreamOverlaysHqolPatched.Helpers;
+using com.aoirint.StreamOverlaysHqolPatched.Managers;
 using Newtonsoft.Json;
 using System;
 using System.IO;
@@ -11,7 +11,7 @@ using UnityEngine;
 using WebSocketSharp.Net;
 using WebSocketSharp.Server;
 
-namespace com.github.zehsteam.StreamOverlays.Server;
+namespace com.aoirint.StreamOverlaysHqolPatched.Server;
 
 internal static class WebServer
 {

@@ -1,8 +1,8 @@
-﻿using com.github.zehsteam.StreamOverlays.Managers;
-using com.github.zehsteam.StreamOverlays.Server;
+﻿using com.aoirint.StreamOverlaysHqolPatched.Managers;
+using com.aoirint.StreamOverlaysHqolPatched.Server;
 using HarmonyLib;
 
-namespace com.github.zehsteam.StreamOverlays.Dependencies.Vanilla.Patches;
+namespace com.aoirint.StreamOverlaysHqolPatched.Dependencies.Vanilla.Patches;
 
 [HarmonyPatch(typeof(VehicleController))]
 internal static class VehicleControllerPatch

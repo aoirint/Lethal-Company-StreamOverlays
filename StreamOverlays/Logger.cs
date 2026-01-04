@@ -1,7 +1,7 @@
 ﻿using BepInEx.Logging;
-using com.github.zehsteam.StreamOverlays.Managers;
+using com.aoirint.StreamOverlaysHqolPatched.Managers;
 
-namespace com.github.zehsteam.StreamOverlays;
+namespace com.aoirint.StreamOverlaysHqolPatched;
 
 internal static class Logger
 {

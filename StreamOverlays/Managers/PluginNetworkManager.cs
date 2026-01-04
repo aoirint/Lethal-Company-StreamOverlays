@@ -1,10 +1,10 @@
-﻿using com.github.zehsteam.StreamOverlays.Helpers;
+﻿using com.aoirint.StreamOverlaysHqolPatched.Helpers;
 using System;
 using System.Linq;
 using Unity.Collections;
 using Unity.Netcode;
 
-namespace com.github.zehsteam.StreamOverlays.Managers;
+namespace com.aoirint.StreamOverlaysHqolPatched.Managers;
 
 internal static class PluginNetworkManager
 {

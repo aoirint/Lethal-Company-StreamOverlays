@@ -8,7 +8,7 @@ using BepInEx.Bootstrap;
 using System;
 using System.Runtime.CompilerServices;
 
-namespace com.github.zehsteam.StreamOverlays.Dependencies;
+namespace com.aoirint.StreamOverlaysHqolPatched.Dependencies;
 
 internal static class HQoLProxy
 {

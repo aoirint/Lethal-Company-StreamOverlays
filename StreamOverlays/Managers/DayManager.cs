@@ -1,10 +1,10 @@
-﻿using com.github.zehsteam.StreamOverlays.Helpers;
+﻿using com.aoirint.StreamOverlaysHqolPatched.Helpers;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace com.github.zehsteam.StreamOverlays.Managers;
+namespace com.aoirint.StreamOverlaysHqolPatched.Managers;
 
 internal static class DayManager
 {

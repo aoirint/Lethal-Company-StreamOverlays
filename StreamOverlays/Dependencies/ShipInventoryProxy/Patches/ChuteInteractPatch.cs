@@ -1,9 +1,9 @@
-﻿using com.github.zehsteam.StreamOverlays.Managers;
-using com.github.zehsteam.StreamOverlays.Server;
+﻿using com.aoirint.StreamOverlaysHqolPatched.Managers;
+using com.aoirint.StreamOverlaysHqolPatched.Server;
 using HarmonyLib;
 using ShipInventory.Objects;
 
-namespace com.github.zehsteam.StreamOverlays.Dependencies.ShipInventoryProxy.Patches;
+namespace com.aoirint.StreamOverlaysHqolPatched.Dependencies.ShipInventoryProxy.Patches;
 
 [HarmonyPatch(typeof(ChuteInteract))]
 internal static class ChuteInteractPatch

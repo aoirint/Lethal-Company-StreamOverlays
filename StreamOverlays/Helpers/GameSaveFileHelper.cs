@@ -1,4 +1,4 @@
-﻿namespace com.github.zehsteam.StreamOverlays.Helpers;
+﻿namespace com.aoirint.StreamOverlaysHqolPatched.Helpers;
 
 internal static class GameSaveFileHelper
 {

@@ -1,6 +1,6 @@
 ﻿using Unity.Netcode;
 
-namespace com.github.zehsteam.StreamOverlays.Helpers;
+namespace com.aoirint.StreamOverlaysHqolPatched.Helpers;
 
 internal static class NetworkUtils
 {

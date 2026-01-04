@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using System.Reflection;
 
-namespace com.github.zehsteam.StreamOverlays.Extensions;
+namespace com.aoirint.StreamOverlaysHqolPatched.Extensions;
 
 internal static class GrabbableObjectExtensions
 {

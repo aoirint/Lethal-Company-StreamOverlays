@@ -1,14 +1,14 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
-using com.github.zehsteam.StreamOverlays.Dependencies.ShipInventoryProxy;
-using com.github.zehsteam.StreamOverlays.Extensions;
+using com.aoirint.StreamOverlaysHqolPatched.Dependencies.ShipInventoryProxy;
+using com.aoirint.StreamOverlaysHqolPatched.Extensions;
 using System;
 using System.Collections;
 using System.IO;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace com.github.zehsteam.StreamOverlays.Helpers;
+namespace com.aoirint.StreamOverlaysHqolPatched.Helpers;
 
 internal static class Utils
 {

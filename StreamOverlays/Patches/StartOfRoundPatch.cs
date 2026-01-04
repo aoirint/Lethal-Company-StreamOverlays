@@ -1,9 +1,9 @@
-﻿using com.github.zehsteam.StreamOverlays.Helpers;
-using com.github.zehsteam.StreamOverlays.Managers;
-using com.github.zehsteam.StreamOverlays.Server;
+﻿using com.aoirint.StreamOverlaysHqolPatched.Helpers;
+using com.aoirint.StreamOverlaysHqolPatched.Managers;
+using com.aoirint.StreamOverlaysHqolPatched.Server;
 using HarmonyLib;
 
-namespace com.github.zehsteam.StreamOverlays.Patches;
+namespace com.aoirint.StreamOverlaysHqolPatched.Patches;
 
 [HarmonyPatch(typeof(StartOfRound))]
 internal static class StartOfRoundPatch

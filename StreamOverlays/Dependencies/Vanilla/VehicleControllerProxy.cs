@@ -1,12 +1,12 @@
-﻿using com.github.zehsteam.StreamOverlays.Dependencies.Vanilla.Patches;
-using com.github.zehsteam.StreamOverlays.Helpers;
+﻿using com.aoirint.StreamOverlaysHqolPatched.Dependencies.Vanilla.Patches;
+using com.aoirint.StreamOverlaysHqolPatched.Helpers;
 using HarmonyLib;
 using System;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 
-namespace com.github.zehsteam.StreamOverlays.Dependencies.Vanilla;
+namespace com.aoirint.StreamOverlaysHqolPatched.Dependencies.Vanilla;
 
 internal static class VehicleControllerProxy
 {

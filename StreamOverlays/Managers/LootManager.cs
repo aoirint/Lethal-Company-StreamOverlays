@@ -1,12 +1,12 @@
-﻿using com.github.zehsteam.StreamOverlays.Dependencies;
-using com.github.zehsteam.StreamOverlays.Dependencies.ShipInventoryProxy;
-using com.github.zehsteam.StreamOverlays.Dependencies.Vanilla;
-using com.github.zehsteam.StreamOverlays.Helpers;
+﻿using com.aoirint.StreamOverlaysHqolPatched.Dependencies;
+using com.aoirint.StreamOverlaysHqolPatched.Dependencies.ShipInventoryProxy;
+using com.aoirint.StreamOverlaysHqolPatched.Dependencies.Vanilla;
+using com.aoirint.StreamOverlaysHqolPatched.Helpers;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace com.github.zehsteam.StreamOverlays.Managers;
+namespace com.aoirint.StreamOverlaysHqolPatched.Managers;
 
 internal static class LootManager
 {

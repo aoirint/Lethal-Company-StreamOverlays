@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamOverlays", "StreamOverlays\StreamOverlays.csproj", "{932C5C01-5308-4234-AE9E-8B8AA3D00665}"
+Project("{0C083BB6-D43E-465F-AB5C-BF54B43033B5}") = "StreamOverlaysHqolPatched", "StreamOverlays\StreamOverlaysHqolPatched.csproj", "{08F1F034-1721-46AF-A5A8-6BFF696D1432}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{932C5C01-5308-4234-AE9E-8B8AA3D00665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{932C5C01-5308-4234-AE9E-8B8AA3D00665}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{932C5C01-5308-4234-AE9E-8B8AA3D00665}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{932C5C01-5308-4234-AE9E-8B8AA3D00665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08F1F034-1721-46AF-A5A8-6BFF696D1432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F1F034-1721-46AF-A5A8-6BFF696D1432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F1F034-1721-46AF-A5A8-6BFF696D1432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F1F034-1721-46AF-A5A8-6BFF696D1432}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {DC83D521-52E9-42FF-91F4-3523462F8843}
+		SolutionGuid = {99D65512-FF1E-497D-853A-23DEA479B7D7}
 	EndGlobalSection
 EndGlobal

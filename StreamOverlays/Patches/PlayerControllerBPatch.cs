@@ -1,10 +1,10 @@
-﻿using com.github.zehsteam.StreamOverlays.Managers;
-using com.github.zehsteam.StreamOverlays.Server;
+﻿using com.aoirint.StreamOverlaysHqolPatched.Managers;
+using com.aoirint.StreamOverlaysHqolPatched.Server;
 using GameNetcodeStuff;
 using HarmonyLib;
 using Unity.Netcode;
 
-namespace com.github.zehsteam.StreamOverlays.Patches;
+namespace com.aoirint.StreamOverlaysHqolPatched.Patches;
 
 [HarmonyPatch(typeof(PlayerControllerB))]
 internal static class PlayerControllerBPatch
