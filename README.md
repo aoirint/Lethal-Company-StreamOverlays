@@ -1,3 +1,30 @@
+# StreamOverlaysHqolPatched
+
+## HQoL Integration
+
+Added integration with the [HQoL](https://thunderstore.io/c/lethal-company/p/HQHQTeam/HQoL/) mod as a soft dependency.
+
+### What changed
+
+- Ship loot value includes the scrap value stored in the HQoL storage.
+
+### NOTE: How the HQoL works
+
+The HQoL mod provides a deposit-only storage for scraps.
+
+Scraps cannot be withdrawn but they can be sold using the terminal command `sell [value]`.
+
+The total deposited scrap value can be checked in the top-left corner of the terminal.
+
+#### When the deposited value changes
+
+- All scraps on the ship are automatically deposited at the end of every quota (when `0 Days Left` is shown).
+- Scraps can be manually deposited using the terminal command `deposit [item name]` when the ship is in orbit or at the company.
+- Deposited scraps are lost if all players die or are ejected.
+- Deposited scraps persists across sessions (they are stored in save files).
+
+---
+
 # StreamOverlays
 
 [![GitHub](https://img.shields.io/badge/GitHub-StreamOverlays-brightgreen?style=for-the-badge&logo=GitHub)](https://github.com/ZehsTeam/Lethal-Company-StreamOverlays)
